@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"dohuyetaphal\startup_stm32f103xb.o"
+"dohuyetaphal\main.o"
+"dohuyetaphal\stm32f1xx_it.o"
+"dohuyetaphal\stm32f1xx_hal_msp.o"
+"dohuyetaphal\gp_drive.o"
+"dohuyetaphal\stm32f1xx_hal_gpio_ex.o"
+"dohuyetaphal\stm32f1xx_hal_adc.o"
+"dohuyetaphal\stm32f1xx_hal_adc_ex.o"
+"dohuyetaphal\stm32f1xx_hal.o"
+"dohuyetaphal\stm32f1xx_hal_rcc.o"
+"dohuyetaphal\stm32f1xx_hal_rcc_ex.o"
+"dohuyetaphal\stm32f1xx_hal_gpio.o"
+"dohuyetaphal\stm32f1xx_hal_dma.o"
+"dohuyetaphal\stm32f1xx_hal_cortex.o"
+"dohuyetaphal\stm32f1xx_hal_pwr.o"
+"dohuyetaphal\stm32f1xx_hal_flash.o"
+"dohuyetaphal\stm32f1xx_hal_flash_ex.o"
+"dohuyetaphal\stm32f1xx_hal_exti.o"
+"dohuyetaphal\stm32f1xx_hal_tim.o"
+"dohuyetaphal\stm32f1xx_hal_tim_ex.o"
+"dohuyetaphal\system_stm32f1xx.o"
+--strict --scatter "DohuyetapHal\DohuyetapHal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DohuyetapHal.map" -o DohuyetapHal\DohuyetapHal.axf
